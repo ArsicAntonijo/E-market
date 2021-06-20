@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProbaActivity"
+    android:background="@mipmap/background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+
+            <EditText
+                android:id="@+id/editUserIme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUserID"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:hint="Ime"
+                android:inputType="textPersonName"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/editUserKorisnickoIme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUserPrezime"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Korisnicko ime"
+                android:inputType="textPersonName"
+                android:layout_centerHorizontal="true" />
+
+
+
+            <EditText
+                android:id="@+id/editUserLozinka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUserKorisnickoIme"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Lozinka"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editUserPrezime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUserIme"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Prezime"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="31dp"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUserLozinka"
+                android:layout_marginTop="10dp"
+                android:minHeight="30dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/buttonUserNovi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_xml_btn_yellow"
+                    android:text="Ubaci" />
+
+                <Button
+                    android:id="@+id/buttonUserIzmenjeni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_xml_btn_yellow"
+                    android:text="Izmeni" />
+
+                <Button
+                    android:id="@+id/buttonUserObrisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_xml_btn_yellow"
+                    android:text="Obrisi" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

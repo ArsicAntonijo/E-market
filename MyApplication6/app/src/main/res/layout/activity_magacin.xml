@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MagacinActivity"
+    android:background="@mipmap/background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/editUbaciNaziv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="81dp"
+                android:ems="10"
+                android:hint="Naziv proizvoda"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editUbaciKolicinu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUbaciImeFirme"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="Kolicina proizvoda"
+                android:inputType="number"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/buttonUbaciNovi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUbaciCena"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="18dp"
+                android:text="Ubaci"
+                android:background="@drawable/selector_xml_btn_yellow"/>
+
+            <Button
+                android:id="@+id/buttonUbaciIzmenjeni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/buttonUbaciNovi"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Izmeni"
+                android:background="@drawable/selector_xml_btn_yellow"/>
+
+            <EditText
+                android:id="@+id/editUbaciCena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUbaciKolicinu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Cena proizvoda"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editUbaciImeFirme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editUbaciNaziv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Ime Firme"
+                android:inputType="textPersonName" />
+            <LinearLayout
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="32dp"
+                    android:text="ID proizvoda: " />
+
+                <EditText
+                    android:id="@+id/editID"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toEndOf="@+id/textView"
+                    android:layout_toRightOf="@+id/textView"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="-1" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/editID"
+                    android:layout_toRightOf="@+id/editID" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

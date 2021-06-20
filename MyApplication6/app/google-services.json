@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061589199572",
+    "project_id": "emarket-4a7ae",
+    "storage_bucket": "emarket-4a7ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061589199572:android:782a1791b9b77ed53ca941",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061589199572-mjdnuda3jd0f35qfdk69fupst0qk2hn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeDXQzGU7x8m7cjd816Bw2tqX2q0yKvsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061589199572-mjdnuda3jd0f35qfdk69fupst0qk2hn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
